@@ -1,0 +1,154 @@
+/* global area start*/
+
+:root{
+    --title-font:'Big Shoulders Display', cursive;
+    --body-font:'Lexend Deca', sans-serif;
+    /* color section */
+    --first-box:hsl(31, 77%, 52%);
+    --second-box: hsl(184, 100%, 22%);
+    --third-box:hsl(179, 100%, 13%);
+    --paragraph-color:hsla(0, 0%, 100%, 0.75);
+    --multiple-use-color: hsl(0, 0%, 95%);
+
+}
+
+/* global area end */
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 690px;
+    background-color: var(--multiple-use-color);
+}
+
+.box{
+    height: 442px;
+    width: 275px;
+    margin-top:40px;
+    padding: 36px 18px 18px 18px;
+}
+
+.image-alter{
+    position: relative;
+    left: 23px;
+    top: 10px;
+
+}
+
+.heading{
+    font-family:var(--title-font);
+    font-weight: 650;
+    color: var(--multiple-use-color);
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 6px 30px;
+    position: relative;
+    top: 34px;
+}
+
+.broad-info{
+    font-family: var(--body-font);
+    color: var(--paragraph-color);
+    line-height: 1.5rem;
+    font-size: 14px;
+    /* width: 90%; */
+    word-wrap: break-word;
+    margin: 8px 30px;
+    position: relative;
+    top: 50px;
+}
+
+.dead-button{
+    font-family: var(--body-font);
+    background-color: var(--multiple-use-color);
+    font-size: 17px;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 30px;
+}
+
+
+
+.first-adj{
+    background-color: var(--first-box);
+    border-radius: 10px 0 0 10px;
+}
+
+.first-adj button{
+    color: var(--first-box);
+    margin-left: 28px;
+    margin-top:60px;
+    position: relative;
+    top: 99px;
+    left: 10px;
+}
+
+.first-adj button:hover{
+    background-color: var(--first-box);
+    color: white;
+    border: 2px solid white;
+    transition: 0.10s;
+}
+
+.second-adj{
+    background-color: var(--second-box);
+}
+
+.second-adj button{
+    color: var(--second-box);
+    margin-left: 28px;
+    margin-top:60px;
+    position: relative;
+    top: 99px;
+    left: 10px;
+}
+
+.second-adj button:hover{
+    background-color: var(--second-box);
+    color: white;
+    border: 2px solid white;
+    transition: 0.10s;
+}
+
+.third-adj{
+    background-color: var(--third-box);
+    border-radius: 0 10px 10px 0;
+}
+
+.third-adj button{
+    color: var(--third-box);
+    margin-left: 28px;
+    margin-top:60px;
+    position: relative;
+    top: 99px;
+    left: 10px;
+}
+
+.third-adj button:hover{
+    background-color: var(--third-box);
+    color: white;
+    border: 2px solid white;
+    transition: 0.10s;
+}
+
+@media only screen and (max-width:688px) {
+    .main-container{
+            background-color: var(--paragraph-color);
+            display: grid;
+            grid-template-columns: repeat(3);
+     }    
+
+        .box{
+            margin-top:0;
+        }
+
+        .first-adj{
+            border-radius:10px 10px 0 0 ;
+        }
+        .third-adj{
+            border-radius: 0 0 10px 10px;
+        }
+}
